@@ -1,5 +1,6 @@
 {
-  "name": "opencv-facecrop",
+  "name": "opencv-facecrop-buffer",
+  "private": true,
   "version": "0.0.5",
   "description": "Npm package to autodetect and crop faces using opencv",
   "main": "index.js",
@@ -15,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arghyadeep-k/opencv-facecrop.git"
+    "url": "git+https://github.com/austinjeane/opencv-facecrop-buffer.git"
   },
   "keywords": [
     "image",
@@ -26,12 +27,18 @@
     "npm",
     "unlicense"
   ],
-  "author": "Arghyadeep",
+  "author": "austinjeane",
+  "contributors" : [
+    {
+      "name" : "arghyadeep-k",
+      "url" : "https://github.com/arghyadeep-k/opencv-facecrop"
+    }
+  ],
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/arghyadeep-k/opencv-facecrop/issues"
+    "url": "https://github.com/austinjeane/opencv-facecrop-buffer/issues"
   },
-  "homepage": "https://github.com/arghyadeep-k/opencv-facecrop#readme",
+  "homepage": "https://github.com/austinjeane/opencv-facecrop-bufferp#readme",
   "dependencies": {
     "canvas": "^2.8.0",
     "fs": "0.0.1-security",

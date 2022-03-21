@@ -38,6 +38,8 @@ module.exports = async (file, name = "output.jpg", type = "image/jpeg", quality 
 
     let point1, point2;
 
+    const faceBuffers = [];
+
     for (let i = 0; i < faces.size(); ++i) {
     //   if( i < (faces.size() -1 ) ){
     //     continue;
@@ -98,11 +100,11 @@ module.exports = async (file, name = "output.jpg", type = "image/jpeg", quality 
         outputFilename = outputFilename.replace(name, name + `-${i+1}`);        
       }
 
-      writeFileSync(outputFilename, canvas.toBuffer(type, { quality: quality }));
       console.log(outputFilename + " created successfully.");
-
+      faceBuffers.push(canvas.toBuffer(type, { quality: quality }));
+      
     }
-    return "Success";
+    return faceBuffers;
   }
   catch (e) {
     console.error(e.message);
